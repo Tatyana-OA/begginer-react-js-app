@@ -13,13 +13,23 @@ const ListScreen = () => {
   return (
     <FlatList
       keyExtractor={(friend) => friend.name} // use Name property as key
+      horizontal // makes flatlist horizontal
+      showsHorizontalScrollIndicator={false} // overflow hidden
       data={friends}
       renderItem={({ item, index }) => {
-        return <Text key={index}>{item.name}</Text>;
+        return (
+          <Text key={index} styles={styles.textStyle}>
+            {item.name}
+          </Text>
+        );
       }}
     />
   );
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  textStyle: {
+    marginVertical: 50,
+  },
+});
 export default ListScreen;
