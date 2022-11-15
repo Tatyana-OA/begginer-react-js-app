@@ -1,20 +1,14 @@
 import React from "react";
-import { Text, StyleSheet } from "react-native";
+import { Text, StyleSheet, View } from "react-native";
 
 const ComponentsScreen = () => {
-  const textVariable = "Super strong!";
-  const componentVariable = (
-    <Text style={styles.description}>
-      Smashing things and villains before it was cool
-    </Text>
-  );
+  const name = "Tatyana!";
+
   return (
-    <>
-      {/* Different ways to apply styles to Text */}
-      <Text style={styles.text}>The Hulk</Text>
-      <Text style={styles.subtext}>{textVariable}</Text>
-      <Text>{componentVariable}</Text>
-    </>
+    <View>
+      <Text style={styles.text}>Getting started</Text>
+      <Text style={styles.subtext}>{name}</Text>
+    </View>
   );
 };
 
