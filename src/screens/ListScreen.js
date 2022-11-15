@@ -13,8 +13,8 @@ const ListScreen = () => {
   return (
     <FlatList
       data={friends}
-      renderItem={({ item }) => {
-        return <Text>{item.name}</Text>;
+      renderItem={({ item, index }) => {
+        return <Text key={index}>{item.name}</Text>;
       }}
     />
   );
