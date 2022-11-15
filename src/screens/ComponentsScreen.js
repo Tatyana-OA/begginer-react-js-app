@@ -2,15 +2,17 @@ import React from "react";
 import { Text, StyleSheet } from "react-native";
 
 const ComponentsScreen = () => {
-  const textVariable = "Hello, Light!";
-  const componentVariable = <Text style={{ color: "green" }}>Hulk</Text>;
+  const textVariable = "Super strong!";
+  const componentVariable = (
+    <Text style={styles.description}>
+      Smashing things and villains before it was cool
+    </Text>
+  );
   return (
     <>
       {/* Different ways to apply styles to Text */}
-      <Text style={styles.text}>
-        New Component says: Hello, Darkness, my old friend.
-      </Text>
-      <Text>{textVariable}</Text>
+      <Text style={styles.text}>The Hulk</Text>
+      <Text style={styles.subtext}>{textVariable}</Text>
       <Text>{componentVariable}</Text>
     </>
   );
@@ -18,11 +20,19 @@ const ComponentsScreen = () => {
 
 const styles = StyleSheet.create({
   text: {
-    fontSize: 20,
+    fontSize: 40,
     color: "purple",
     fontStyle: "bold",
     textAlign: "center",
     paddingTop: 10,
+  },
+  subtext: {
+    fontSize: 30,
+    color: "blue",
+  },
+  description: {
+    fontSize: 20,
+    color: "green",
   },
 });
 
