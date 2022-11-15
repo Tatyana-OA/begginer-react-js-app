@@ -2,7 +2,17 @@ import React from "react";
 import { Text, StyleSheet } from "react-native";
 
 const ComponentsScreen = () => {
-  return <Text style={styles.text}>Hello, Darkness, my old friend.</Text>;
+  return (
+    <>
+      {/* Different ways to apply styles to Text */}
+      <Text style={styles.text}>
+        New Component says: Hello, Darkness, my old friend.
+      </Text>
+      <Text style={{ fontSize: 40, color: "red" }}>
+        New Component says: Hello, Darkness, my old friend.
+      </Text>
+    </>
+  );
 };
 
 const styles = StyleSheet.create({
