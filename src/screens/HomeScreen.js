@@ -31,6 +31,10 @@ const HomeScreen = ({ navigation }) => {
         title="Go to Square Screen"
         onPress={() => navigation.navigate("Square")}
       />
+      <Button
+        title="Go to Text Screen"
+        onPress={() => navigation.navigate("Text")}
+      />
     </View>
   );
 };
@@ -39,6 +43,8 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 30,
     textAlign: "center",
+    paddingTop: 5,
+    paddingBottom: 30,
   },
 });
 
