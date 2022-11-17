@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Text, StyleSheet, View, Button } from "react-native";
+import { Text, View, Button } from "react-native";
 
 const CounterScreen = () => {
   const [counter, setCounter] = useState(0);
